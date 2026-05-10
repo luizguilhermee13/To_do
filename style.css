@@ -87,15 +87,19 @@ a {
   border-radius: 1rem;
 }
 
+.cardTop h3 {
+  font-size: 1.4em;
+}
+
 .tarefa {
   background-color: #4a91e2e0;
   border-radius: 0.5rem;
   display: flex;
   justify-content: space-evenly;
-  padding: 10px;
+  padding: 4px;
   width: auto;
   height: auto;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 .botao {
@@ -106,10 +110,10 @@ a {
 }
 
 .corpo-tarefas {
-  flex-grow: 1; /* Faz essa div ocupar todo o espaço vazio central */
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Garante que as tarefas comecem no topo da div */
+  justify-content: flex-start;
   gap: 5px;
   padding: 10px 0;
 }
@@ -118,4 +122,44 @@ a {
   display: flex;
   justify-content: center;
   padding: 10px;
+}
+
+.cardFotter button {
+  background-color: #4a90e2;
+  font-size: 1em;
+  border-radius: 10px;
+  padding: 6px;
+  color: white;
+}
+
+.titulo_categorias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 280px;
+  height: 150px;
+  background-color: #d8cff0;
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  padding: 20px;
+  color: black;
+}
+
+.titulo_categorias input {
+  padding: 8px;
+  width: 100%;
+}
+
+.titulo_categorias button {
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
 }
